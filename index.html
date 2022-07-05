@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikin Lightbox</title>
+
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body class="bg-primary">
+    <h1 class="text-2xl sm:text-5xl font-semibold text-center m-6 drop-shadow-2xl">Bikin Lightbox Pakai TailwindCSS</h1>
+
+    <div class="container bg-white py-7 sm:pl-[75px] sm:py-7 box-border sm:w-[1000px] sm:mx-auto cf">
+      <ul class="[&>li]:mx-auto sm:[&>li]:float-left sm:[&>li]:mr-16 sm:[&>li]:relative sm:[&>li>div]:z-50">
+        <li class="w-40 h-40 rounded-full mb-20 sm:mb-0">
+          <a href="#gambar-1" class="sm:[&:hover>span]:scale-100 sm:[&:hover>span]:opacity-100 sm:[&:hover>span]:rotate-[360deg]">
+            <img src="public/img/thumbnail/thumbnail-1.png" alt="Kucing Anime 1" class="rounded-full mb-4" />
+            <span class="block sm:w-40 sm:h-40 sm:bg-primary/50 sm:absolute sm:top-0 sm:rounded-full sm:text-lg sm:scale-0 sm:opacity-0 sm:text-center sm:leading-[160px] sm:transition-all sm:duration-500 font-semibold text-xl"
+              >Kucing Anime 1</span
+            >
+          </a>
+
+          <div
+            class="bg-black/70 sm:py-24 fixed top-0 left-0 w-0 h-0 overflow-hidden scale-0 target:scale-100 transition-all duration-700 target:w-auto target:h-auto target:bottom-0 target:right-0 [&:target>img]:scale-100 [&:target>img]:opacity-100 [&:target>img]:delay-500 [&:target>a]:scale-100 [&:target>a]:opacity-100 [&:target>a]:delay-500"
+            id="gambar-1"
+          >
+            <a href="#" class="bg-white p-1 text-base absolute top-16 left-36 sm:top-10 sm:left-[735px] rounded-lg scale-0 opacity-0 transition-all duration-700">X Close</a>
+
+            <!-- Prev -->
+            <a href="#gambar-4" class="sm:bg-white sm:w-6 sm:h-8 sm:rounded-sm sm:text-center sm:p-1 sm:text-lg sm:absolute sm:top-[350px] sm:left-[450px] scale-0 opacity-0 transition-all duration-700">&lt;</a>
+            <!-- Prev -->
+
+            <img src="public/img/fullsize/fullsize-1.png" alt="Kucing Anime 1" class="max-w-full sm:max-h-full mt-32 scale-0 opacity-0 transition-all duration-500 sm:m-auto" />
+
+            <!-- Next -->
+            <a href="#gambar-2" class="sm:bg-white sm:w-6 sm:h-8 sm:rounded-sm sm:text-center sm:p-1 sm:text-lg sm:absolute sm:top-[350px] sm:right-[450px] scale-0 opacity-0 transition-all duration-700">&gt;</a>
+            <!-- Next -->
+          </div>
+        </li>
+
+        <li class="w-40 h-40 rounded-full mb-20 sm:m-0">
+          <a href="#gambar-2" class="sm:[&:hover>span]:scale-100 sm:[&:hover>span]:opacity-100 sm:[&:hover>span]:rotate-[360deg]">
+            <img src="public/img/thumbnail/thumbnail-2.png" alt="Kucing Anime 1" class="rounded-full mb-4" />
+            <span class="block sm:w-40 sm:h-40 sm:bg-primary/50 sm:absolute sm:top-0 sm:rounded-full sm:text-lg sm:scale-0 sm:opacity-0 sm:text-center sm:leading-[160px] sm:transition-all sm:duration-500 font-semibold text-xl"
+              >Kucing Anime 2</span
+            >
+          </a>
+
+          <div
+            class="bg-black/70 sm:py-24 fixed top-0 left-0 w-0 h-0 overflow-hidden scale-0 target:scale-100 transition-all duration-700 target:w-auto target:h-auto target:bottom-0 target:right-0 [&:target>img]:scale-100 [&:target>img]:opacity-100 [&:target>img]:delay-500 [&:target>a]:scale-100 [&:target>a]:opacity-100 [&:target>a]:delay-500"
+            id="gambar-2"
+          >
+            <a href="#" class="bg-white p-1 text-base absolute top-16 left-36 sm:top-10 sm:left-[735px] rounded-lg scale-0 opacity-0 transition-all duration-700">X Close</a>
+
+            <!-- Prev -->
+            <a href="#gambar-1" class="sm:bg-white sm:w-6 sm:h-8 sm:rounded-sm sm:text-center sm:p-1 sm:text-lg sm:absolute sm:top-[350px] sm:left-[450px] scale-0 opacity-0 transition-all duration-700">&lt;</a>
+            <!-- Prev -->
+
+            <img src="public/img/fullsize/fullsize-2.png" alt="Kucing Anime 2" class="max-w-full sm:max-h-full mt-32 scale-0 opacity-0 transition-all duration-500 sm:m-auto" />
+
+            <!-- Next -->
+            <a href="#gambar-3" class="sm:bg-white sm:w-6 sm:h-8 sm:rounded-sm sm:text-center sm:p-1 sm:text-lg sm:absolute sm:top-[350px] sm:right-[450px] scale-0 opacity-0 transition-all duration-700">&gt;</a>
+            <!-- Next -->
+          </div>
+        </li>
+
+        <li class="w-40 h-40 rounded-full mb-20 sm:m-0">
+          <a href="#gambar-3" class="sm:[&:hover>span]:scale-100 sm:[&:hover>span]:opacity-100 sm:[&:hover>span]:rotate-[360deg]">
+            <img src="public/img/thumbnail/thumbnail-3.png" alt="Kucing Anime 1" class="rounded-full mb-4" />
+            <span class="block sm:w-40 sm:h-40 sm:bg-primary/50 sm:absolute sm:top-0 sm:rounded-full sm:text-lg sm:scale-0 sm:opacity-0 sm:text-center sm:leading-[160px] sm:transition-all sm:duration-500 font-semibold text-xl"
+              >Kucing Anime 3</span
+            >
+          </a>
+
+          <div
+            class="bg-black/70 sm:py-24 fixed top-0 left-0 w-0 h-0 overflow-hidden scale-0 target:scale-100 transition-all duration-700 target:w-auto target:h-auto target:bottom-0 target:right-0 [&:target>img]:scale-100 [&:target>img]:opacity-100 [&:target>img]:delay-500 [&:target>a]:scale-100 [&:target>a]:opacity-100 [&:target>a]:delay-500"
+            id="gambar-3"
+          >
+            <a href="#" class="bg-white p-1 text-base absolute top-16 left-36 sm:top-10 sm:left-[735px] rounded-lg scale-0 opacity-0 transition-all duration-700">X Close</a>
+
+            <!-- Prev -->
+            <a href="#gambar-2" class="sm:bg-white sm:w-6 sm:h-8 sm:rounded-sm sm:text-center sm:p-1 sm:text-lg sm:absolute sm:top-[350px] sm:left-[450px] scale-0 opacity-0 transition-all duration-700">&lt;</a>
+            <!-- Prev -->
+
+            <img src="public/img/fullsize/fullsize-3.png" alt="Kucing Anime 2" class="max-w-full sm:max-h-full mt-32 scale-0 opacity-0 transition-all duration-500 sm:m-auto" />
+
+            <!-- Next -->
+            <a href="#gambar-4" class="sm:bg-white sm:w-6 sm:h-8 sm:rounded-sm sm:text-center sm:p-1 sm:text-lg sm:absolute sm:top-[350px] sm:right-[450px] scale-0 opacity-0 transition-all duration-700">&gt;</a>
+            <!-- Next -->
+          </div>
+        </li>
+
+        <li class="w-40 h-40 rounded-full mb-10 sm:m-0">
+          <a href="#gambar-4" class="sm:[&:hover>span]:scale-100 sm:[&:hover>span]:opacity-100 sm:[&:hover>span]:rotate-[360deg]">
+            <img src="public/img/thumbnail/thumbnail-4.png" alt="Kucing Anime 1" class="rounded-full mb-4" />
+            <span class="block sm:w-40 sm:h-40 sm:bg-primary/50 sm:absolute sm:top-0 sm:rounded-full sm:text-lg sm:scale-0 sm:opacity-0 sm:text-center sm:leading-[160px] sm:transition-all sm:duration-500 font-semibold text-xl"
+              >Kucing Anime 4</span
+            >
+          </a>
+
+          <div
+            class="bg-black/70 sm:py-24 fixed top-0 left-0 w-0 h-0 overflow-hidden scale-0 target:scale-100 transition-all duration-700 target:w-auto target:h-auto target:bottom-0 target:right-0 [&:target>img]:scale-100 [&:target>img]:opacity-100 [&:target>img]:delay-500 [&:target>a]:scale-100 [&:target>a]:opacity-100 [&:target>a]:delay-500"
+            id="gambar-4"
+          >
+            <a href="#" class="bg-white p-1 text-base absolute top-16 left-36 sm:top-10 sm:left-[735px] rounded-lg scale-0 opacity-0 transition-all duration-700">X Close</a>
+
+            <!-- Prev -->
+            <a href="#gambar-3" class="sm:bg-white sm:w-6 sm:h-8 sm:rounded-sm sm:text-center sm:p-1 sm:text-lg sm:absolute sm:top-[350px] sm:left-[450px] scale-0 opacity-0 transition-all duration-700">&lt;</a>
+            <!-- Prev -->
+
+            <img src="public/img/fullsize/fullsize-4.png" alt="Kucing Anime 4" class="max-w-full sm:max-h-full mt-32 scale-0 opacity-0 transition-all duration-500 sm:m-auto" />
+
+            <!-- Next -->
+            <a href="#gambar-1" class="sm:bg-white sm:w-6 sm:h-8 sm:rounded-sm sm:text-center sm:p-1 sm:text-lg sm:absolute sm:top-[350px] sm:right-[450px] scale-0 opacity-0 transition-all duration-700">&gt;</a>
+            <!-- Next -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
